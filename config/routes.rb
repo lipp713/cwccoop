@@ -7,7 +7,10 @@ StukdoCwccoop::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home'
 
-  get 'about' => "pages#about"
+  get 'findmember' => "pages#findmember"
+  get 'ethical' => "pages#ethical"
+  get 'faq' => "pages#faq"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
