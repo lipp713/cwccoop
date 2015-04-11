@@ -19,5 +19,27 @@ module StukdoCwccoop
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    ActionMailer::Base.smtp_settings = {
+ 
+        :port =>           '587',
+        :address =>        'smtp.mandrillapp.com',
+        :user_name =>      "...@gmail.com",
+        :password =>       "XP10CfgLhJO75bQ26IrYOQ",
+        :authentication => :plain
+    
+    }
+
+    #ActionMailer::Base.smtp_settings = {
+ 
+    #    :address        => 'smtp.gmail.com',
+    #    :domain         => 'mail.google.com',
+    #    :port           => 587,
+    #    :user_name      => "", #ENV['GMAIL_USERNAME'],
+    #    :password       => "", #ENV['GMAIL_PASSWORD'],
+    #    :authentication => 'login',
+    #    :enable_starttls_auto => true
+    #}
+
   end
 end
