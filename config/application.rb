@@ -24,7 +24,7 @@ module StukdoCwccoop
  
         :port =>           '587',
         :address =>        'smtp.mandrillapp.com',
-        :user_name =>      "...@gmail.com",
+        :user_name =>      "@gmail.com",
         :password =>       "XP10CfgLhJO75bQ26IrYOQ",
         :authentication => :plain
     
